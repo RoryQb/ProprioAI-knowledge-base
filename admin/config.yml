@@ -1,0 +1,33 @@
+echo backend: > admin\config.yml
+echo   name: github >> admin\config.yml
+echo   repo: RoryQb/proprioai-knowledge-base >> admin\config.yml
+echo   branch: main >> admin\config.yml
+echo media_folder: "assets/images" >> admin\config.yml
+echo public_folder: "/assets/images" >> admin\config.yml
+echo collections: >> admin\config.yml
+echo   - name: "concepts" >> admin\config.yml
+echo     label: "P-DTR Concepts" >> admin\config.yml
+echo     folder: "concepts" >> admin\config.yml
+echo     create: true >> admin\config.yml
+echo     slug: "{{slug}}" >> admin\config.yml
+echo     fields: >> admin\config.yml
+echo       - { label: "Name", name: "name", widget: "string" } >> admin\config.yml
+echo       - label: "Type" >> admin\config.yml
+echo         name: "type" >> admin\config.yml
+echo         widget: "select" >> admin\config.yml
+echo         options: >> admin\config.yml
+echo           - "Anatomy" >> admin\config.yml
+echo           - "Systems" >> admin\config.yml
+echo           - "Physiology" >> admin\config.yml
+echo           - "Receptors" >> admin\config.yml
+echo           - "Pathways" >> admin\config.yml
+echo           - "Concepts" >> admin\config.yml
+echo           - "Associations" >> admin\config.yml
+echo           - "Rulesets" >> admin\config.yml
+echo           - "Dysfunctions" >> admin\config.yml
+echo           - "Techniques" >> admin\config.yml
+echo           - "Tools" >> admin\config.yml
+echo           - "ClinicalSigns" >> admin\config.yml
+echo       - { label: "Tags", name: "tags", widget: "list", required: false } >> admin\config.yml
+echo       - { label: "Related Concepts", name: "related_concepts", widget: "list", required: false } >> admin\config.yml
+echo       - { label: "Body", name: "body", widget: "markdown" } >> admin\config.yml
