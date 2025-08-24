@@ -1,0 +1,6 @@
+TODO //
+
+Initiate the repo locally and push here. 
+Markdown files
+
+figure out  CMS
